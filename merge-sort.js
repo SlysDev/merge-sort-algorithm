@@ -39,4 +39,3 @@ let mergeSort = function (array) {
         return mergedArray;
     }
 };
-mergeSort([3, 9, 5, 8, 4, 7, 2]);
