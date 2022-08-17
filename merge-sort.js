@@ -5,14 +5,12 @@ let mergeSort = function (array) {
         // sort the left side of the array
         let leftArray = array.slice(0, Math.floor(array.length / 2));
         let sortedLeftArray = mergeSort(leftArray);
-        console.log(sortedLeftArray);
         // sort the right side of the array
         let rightArray = array.slice(
             Math.floor(array.length / 2),
             array.length
         );
         let sortedRightArray = mergeSort(rightArray);
-        console.log(sortedRightArray);
         // merge the two sides of the array
         let mergedArray = [];
         let mergeArrays = function () {
@@ -38,7 +36,6 @@ let mergeSort = function (array) {
             }
         };
         mergeArrays();
-        console.log(mergedArray);
         return mergedArray;
     }
 };
